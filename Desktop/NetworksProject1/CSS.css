@@ -1,0 +1,41 @@
+header {
+  
+  background-color: #1687a7;
+}
+
+h1 {
+ font-family: 'Allura', cursive;
+ font-weight:	bold;
+  background-color: #1687a7;
+}
+
+nav	ul	li	{
+			list-style:	none;
+			display:	inline;
+			margin:	1em;
+
+}
+nav	{
+			padding:	0.25em;
+			background-color: #d3e0ea;
+			font-size: 14px;
+}
+nav	a	{
+			padding:	0.25em;
+}
+
+p#par {
+	
+	padding-left: 10px;
+	padding-bottom : 10px;
+	padding-top:10px;
+	margin-left:0px;
+	margin-right:0px;
+	border : double ;
+	list-style: 
+	background-color: #276678;
+	
+
+}
+
+.align-center {text-align: center; margin: auto;}

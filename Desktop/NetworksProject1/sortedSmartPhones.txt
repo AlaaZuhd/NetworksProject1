@@ -1,0 +1,6 @@
+       Name  Price
+3    Hawawi      2
+4        MI      5
+0  Iphone 4      7
+1     Nokia      8
+2   Samsung     10
