@@ -4,51 +4,110 @@
         <title>
             ENCS3320 Simple Webserver
         </title>
-        <!-- <link rel="stylesheet" href="CSS.css" />
-        <link   href='https://fonts.google.com/share?selection.family=Allura'    rel='stylesheet'    type='text/css'> -->
+        <!--<link rel="stylesheet" href="CSS.css" />-->
+      <!--  <link   href='https://fonts.google.com/share?selection.family=Allura' rel='stylesheet' type='text/css'> />-->
         <style>
-                header {
-                
+            header {
+
+            background-color: #1687a7;
+            }
+
+            h1 {
+            font-family: 'Allura', cursive;
+            font-weight:	bold;
+            background-color: #1687a7;
+            padding-left: 3%;
+            padding-top: 1%;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                /*padding-left: 5%;*/
+                margin-left: 5%;
+                /*padding-left: 5%;*/
+                margin-right: 8%;
+            }
+
+            nav	ul	li	{
+                        list-style:	none;
+                        display:	inline;
+                        margin:	1em;
+                        padding-left: 0px;
+                        margin-left: 0;
+
+            }
+            nav	{
+                        padding:	0.25em;
+                        background-color: #d3e0ea;
+                        font-size: 14px;
+            }
+            nav	a	{
+                    padding:	0.25em;
+            }
+
+
+            .align-center {text-align: center; margin: auto;}
+
+
+            #partners-info {
+                padding-left: 10px;
+                padding-bottom : 10px;
+                padding-top:10px;
+                margin-left:0px;
+                margin-right:0px;
                 background-color: #1687a7;
-                }
-        
-                h1 {
-                font-family: 'Allura', cursive;
-                font-weight:	bold;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            #partners-info  .inner-container {
+                display: flex;
+                margin-right: 2.5%;
+                margin-left: 2.5%;
+                flex-direction: column;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                align-items: center;
+
+                border-style: solid;
+                border: 5px solid black;
+                background-color: #d3e0ea;
+
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+
+                width: 25%;
+            }
+
+            #partners-info  .inner-container .circle {
+                width: 50px;
+                height: 50px;
+                margin-top: 10px;
                 background-color: #1687a7;
-                }
-        
-                nav	ul	li	{
-                            list-style:	none;
-                            display:	inline;
-                            margin:	1em;
-        
-                }
-                nav	{
-                            padding:	0.25em;
-                            background-color: #d3e0ea;
-                            font-size: 14px;
-                }
-                nav	a	{
-                            padding:	0.25em;
-                }
-        
-                p#par {
-                    
-                    padding-left: 10px;
-                    padding-bottom : 10px;
-                    padding-top:10px;
-                    margin-left:0px;
-                    margin-right:0px;
-                    border : double ;
-                    list-style: 
-                    background-color: #276678;
-                    
-        
-                }
-        
-                .align-center {text-align: center; margin: auto;}
-    </style>
+                border-radius: 50% 50%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #partners-info  .inner-container .info {
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+            }
+
+            .figures{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     </head>
     <header>
         <h1>Welcome to our course <span style="color:green;">Computer Networks</span></h1>
@@ -61,22 +120,48 @@
            </nav>
            </header>
 	<body>
-           <p id="par">I am Razan <br>
-           I am Rawan <br>
-           I am Alaa<br>
 
-           </p>
 
+        <div id="partners-info">
+            <div class="inner-container">
+                <div class="circle"><h1>R</h1></div>
+                <div class="info">Rawan Yassin,
+                    A third year computer engineering student with 96.8 GPA.
+                    Some of the projects that I have done and proud of are: SImulations of CPU scheduling algorithms project, Single Vehicle pickup and delivery
+                    problem with time window constraints in the AI course, a clinic management system, and many others.
+                    Razan (my twin ) and Alaa has been my partners for four semesters now!</div>
+            </div>
+            <div class="inner-container">
+                <div class="circle"><h1>A</h1></div>
+                <div class="info">Alaa Zuhd, A third-year student at Birzeit University studying Computer Engineering,
+                    I have an interest in both hardware and software fields, so I’m working to improve my skills and knowledge in this fields by being a good learner,
+                    I have many skills in coding, problem-solving, working under pressure, andrespect teamwork. I have done many intersting projects during my journey like
+                    a project for a complete system for Lina's Pro Clinic, application based on a searching algorithm in real word problem (The signle PDPTW), a CPU-schduler
+                    simulation, and a project for implementing a design for a low power comparator logic circuit
+                    using transistor Layout level. </div>
+            </div>
+            <div class="inner-container">
+                <div class="circle"><h1>R</h1></div>
+                <div class="info">I am Razan Yassin,I am a third year computer science student. I have done many projects during my study like :
+                    implementation of Dijkstra algorithm, huffman code , longest common subsequence in the Algorithm course, a clinic management system in
+                     the database course and many others</div>
+            </div>
+        </div>
+
+        <div class="figures">
+        <h2>Image with <span style="color:#1687a7;">.png</span> extension</h2>
         <figure>
-                <img    src="network1.png"
-                            alt="Network"  title="image" width="300" height="300" />
+                <img src="network1.png" alt="Network"  title="image" width="300" height="300" />
         </figure>
-
+        </div>
+        <hr>
+        <hr>
+        <div class="figures">
+        <h2>Image with <span style="color:#1687a7;">.jpg</span> extension</h2>
         <figure>
-                <img    src="network2.jpg"
-                            alt="Network"  title="image" width="300" height="300" />
+                <img src="network2.jpg" alt="Network"  title="image" width="300" height="300" />
         </figure>
-
+        </div>
 
     </body>
 </html>
